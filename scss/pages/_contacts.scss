@@ -1,0 +1,46 @@
+.contact-bgImg-container {
+  //   border: 2px solid red;
+  @include bgImage(100vh, $main-bgImage-path);
+  background-position: top;
+  .nav {
+    height: 40vh;
+  }
+}
+
+.contact {
+  height: 40vh;
+  //   border: 2px solid red;
+  //   padding-top: 15rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+
+  .contact__list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    .text-secondary {
+      color: $secondary-color;
+    }
+  }
+}
+
+.middle {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+
+    a {
+      @extend .link-style;
+      margin: 1rem 0.6rem;
+    }
+  }
+}
